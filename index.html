@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حرفي - منصة الحرفيين الجزائرية</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--p:#006233;--pd:#004d29;--s:#D21034;--a:#F5A623;--bg:#f8fafc;--c:#fff;--t:#1e293b;--tl:#64748b;--b:#e2e8f0;--sh:0 4px 20px rgba(0,0,0,0.08);--sh2:0 10px 40px rgba(0,0,0,0.12);--r:16px;--rs:12px;--d:#dc2626;--ok:#16a34a;--warn:#f59e0b;--info:#3b82f6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--t);line-height:1.7;min-height:100vh}
+.hd{background:linear-gradient(135deg,var(--p) 0%,var(--pd) 100%);color:#fff;padding:20px;position:sticky;top:0;z-index:100;box-shadow:var(--sh2)}
+.hd-t{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.lg{display:flex;align-items:center;gap:10px}
+.lg-i{width:45px;height:45px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px}
+.lg-t h1{font-size:22px;font-weight:900}
+.lg-t span{font-size:11px;opacity:.85;font-weight:500}
+.hd-a{display:flex;gap:10px;align-items:center}
+.bi{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.bi:hover{background:rgba(255,255,255,0.25)}
+.ub{background:rgba(255,255,255,0.2);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700}
+.sb{position:relative}
+.sb input{width:100%;padding:14px 50px 14px 20px;border:none;border-radius:var(--rs);font-size:15px;font-family:'Tajawal';background:rgba(255,255,255,0.15);color:#fff;outline:none;transition:all .3s}
+.sb input::placeholder{color:rgba(255,255,255,0.6)}
+.sb input:focus{background:#fff;color:var(--t)}
+.sb input:focus::placeholder{color:var(--tl)}
+.sb .si{position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:18px;opacity:.7}
+.cat{padding:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cat::-webkit-scrollbar{display:none}
+.cl{display:flex;gap:10px;padding-bottom:5px}
+.ci{flex-shrink:0;padding:10px 18px;background:var(--c);border:2px solid var(--b);border-radius:50px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:6px;transition:all .3s}
+.ci.a{background:var(--p);color:#fff;border-color:var(--p)}
+.ci:hover:not(.a){border-color:var(--p);color:var(--p)}
+.st{padding:0 20px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
+.st h2{font-size:20px;font-weight:800}
+.st a{color:var(--p);font-size:14px;font-weight:700;text-decoration:none}
+.ag{padding:0 20px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.ac{background:var(--c);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:all .3s;cursor:pointer}
+.ac:hover{transform:translateY(-5px);box-shadow:var(--sh2)}
+.ci2{height:180px;position:relative;display:flex;align-items:center;justify-content:center;font-size:60px}
+.cb{position:absolute;top:12px;right:12px;background:var(--a);color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:800}
+.cf{position:absolute;top:12px;left:12px;width:36px;height:36px;background:#fff;border-radius:50%;border:none;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.cf:hover{transform:scale(1.1)}
+.vb{position:absolute;bottom:12px;right:12px;background:var(--ok);color:#fff;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800}
+.cb2{padding:16px}
+.ch{display:flex;justify-content:space-between;align-items:start;margin-bottom:10px}
+.cn{font-size:18px;font-weight:800;margin-bottom:2px}
+.cc{color:var(--p);font-size:13px;font-weight:700}
+.cr{display:flex;align-items:center;gap:4px;background:#fef3c7;padding:4px 10px;border-radius:20px;font-size:13px;font-weight:700;color:#92400e}
+.cl2{display:flex;align-items:center;gap:6px;color:var(--tl);font-size:13px;margin-bottom:12px}
+.ct{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tg{background:#f1f5f9;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:600;color:var(--tl)}
+.tg.v{background:#dcfce7;color:var(--ok)}
+.cft{display:flex;gap:10px}
+.bt{flex:1;padding:12px;border-radius:var(--rs);border:none;font-family:'Tajawal';font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .3s;text-decoration:none}
+.bt-p{background:var(--p);color:#fff}
+.bt-p:hover{background:var(--pd)}
+.bt-o{background:transparent;color:var(--p);border:2px solid var(--b)}
+.bt-o:hover{border-color:var(--p)}
+.bt-d{background:var(--d);color:#fff}
+.bt-d:hover{background:#b91c1c}
+.bt-a{background:var(--a);color:#fff}
+.bt-a:hover{background:#d97706}
+.bt-w{background:var(--warn);color:#fff}
+.bt-w:hover{background:#d97706}
+.bt-i{background:var(--info);color:#fff}
+.bt-i:hover{background:#2563eb}
+.bn{position:fixed;bottom:0;left:0;right:0;background:var(--c);display:flex;justify-content:space-around;padding:10px 0 20px;box-shadow:0 -4px 20px rgba(0,0,0,0.08);z-index:100}
+.ni{display:flex;flex-direction:column;align-items:center;gap:4px;padding:5px 10px;cursor:pointer;color:var(--tl);border:none;background:none;font-family:'Tajawal';font-size:11px;font-weight:700;transition:all .3s}
+.ni.a{color:var(--p)}
+.ni .ni2{font-size:22px}
+.mo{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;z-index:200;padding:20px}
+.mo.a{display:flex}
+.md{background:var(--c);border-radius:var(--r);width:100%;max-width:480px;max-height:90vh;overflow-y:auto;animation:mi .3s ease}
+@keyframes mi{from{opacity:0;transform:scale(0.9) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.mh{padding:20px;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center}
+.mh h3{font-size:20px;font-weight:800}
+.mc{width:36px;height:36px;border-radius:50%;background:var(--bg);border:none;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.mb{padding:20px}
+.fg{margin-bottom:16px}
+.fg label{display:block;margin-bottom:6px;font-weight:700;font-size:14px}
+.fg input,.fg select,.fg textarea{width:100%;padding:12px 16px;border:2px solid var(--b);border-radius:var(--rs);font-family:'Tajawal';font-size:15px;outline:none;transition:all .3s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--p)}
+.fg textarea{resize:vertical;min-height:100px}
+.fh{font-size:12px;color:var(--tl);margin-top:4px}
+.so{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.so2{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 10px;border-radius:var(--rs);background:var(--bg);cursor:pointer;border:none;font-family:'Tajawal';transition:all .3s}
+.so2:hover{background:#e2e8f0}
+.so2 .si2{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px}
+.so2 span{font-size:12px;font-weight:700}
+.pm{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+.pm2{padding:16px;border:2px solid var(--b);border-radius:var(--rs);text-align:center;cursor:pointer;background:var(--c);transition:all .3s}
+.pm2:hover{border-color:var(--p)}
+.pm2.s{border-color:var(--p);background:#f0fdf4}
+.pm2 .pi{font-size:32px;margin-bottom:8px}
+.pm2 .pn{font-size:14px;font-weight:700}
+.pm2 .pd{font-size:11px;color:var(--tl)}
+.sb2{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);color:#fff;padding:16px 20px;margin:0 20px 20px;border-radius:var(--r);display:flex;align-items:center;gap:12px}
+.sb2 .sh{font-size:32px}
+.sb2 h4{font-size:15px;font-weight:800}
+.sb2 p{font-size:12px;opacity:.8}
+.to{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--t);color:#fff;padding:14px 28px;border-radius:50px;font-weight:700;font-size:14px;z-index:300;opacity:0;transition:all .4s;white-space:nowrap}
+.to.s{opacity:1;transform:translateX(-50%) translateY(0)}
+.tb{display:flex;gap:0;border-bottom:2px solid var(--b);margin-bottom:20px}
+.tb2{flex:1;padding:12px;border:none;background:none;font-family:'Tajawal';font-size:14px;font-weight:700;cursor:pointer;color:var(--tl);border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .3s}
+.tb2.a{color:var(--p);border-bottom-color:var(--p)}
+.lh{text-align:center;padding:40px 20px}
+.lh .bi2{font-size:80px;margin-bottom:15px}
+.lh h2{font-size:26px;font-weight:900;margin-bottom:8px}
+.lh p{color:var(--tl);font-size:15px}
+.pi{display:flex;gap:10px;justify-content:center;margin:20px 0}
+.pi2{width:50px;height:60px;text-align:center;font-size:24px;font-weight:800;border:2px solid var(--b);border-radius:var(--rs);outline:none;transition:all .3s}
+.pi2:focus{border-color:var(--p)}
+.oc{background:var(--c);border-radius:var(--r);padding:16px;margin-bottom:12px;box-shadow:var(--sh)}
+.oh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.os{padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700}
+.sp{background:#fef3c7;color:#92400e}
+.sa{background:#dbeafe;color:#1e40af}
+.sc{background:#dcfce7;color:var(--ok)}
+.sx{background:#fee2e2;color:var(--d)}
+.pay-banner{background:linear-gradient(135deg,var(--warn) 0%,#d97706 100%);color:#fff;padding:14px 20px;margin:0 20px 16px;border-radius:var(--r);display:flex;align-items:center;gap:12px;animation:pulse 2s infinite}
+.pay-banner .ph{font-size:28px}
+.pay-banner h4{font-size:14px;font-weight:800}
+.pay-banner p{font-size:12px;opacity:.9}
+.pay-banner button{background:#fff;color:var(--warn);border:none;padding:8px 16px;border-radius:20px;font-family:'Tajawal';font-weight:700;font-size:12px;cursor:pointer;margin-right:auto}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.01)}}
+.pay-info{background:#fef3c7;border:2px solid #fbbf24;border-radius:var(--rs);padding:16px;margin-bottom:16px}
+.pay-info h4{color:#92400e;font-size:16px;margin-bottom:10px}
+.pay-info .ccp-num{background:#fff;padding:12px;border-radius:8px;font-size:18px;font-weight:900;text-align:center;letter-spacing:2px;margin:10px 0;color:var(--t)}
+.pay-info .ccp-name{text-align:center;font-size:13px;color:var(--tl);margin-bottom:10px}
+.locked{position:relative;overflow:hidden}
+.locked::after{content:"🔒";position:absolute;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;font-size:50px;color:#fff;border-radius:var(--r)}
+.blur-info{filter:blur(4px);user-select:none}
+.expired-badge{background:var(--d);color:#fff;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:800;display:inline-block;margin-bottom:10px}
+.ai-badge{background:linear-gradient(135deg,#7c3aed 0%,#a855f7 100%);color:#fff;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:800;display:inline-flex;align-items:center;gap:4px;margin-bottom:10px}
+.ai-badge::before{content:"🤖"}
+.new-badge{background:var(--ok);color:#fff;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:800;display:inline-block;margin-bottom:10px}
+@media(max-width:480px){.ag{grid-template-columns:1fr}.pm{grid-template-columns:1fr}}
+.h{display:none!important}
+.ps{padding-bottom:100px}
+</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#006233">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="ps" id="loginPage">
+<div class="lh"><div class="bi2">🛠️</div><h2>حرفي</h2><p>منصة الحرفيين الجزائرية 🇩🇿</p></div>
+<div style="padding:0 30px;max-width:400px;margin:0 auto;">
+<div class="tb">
+<button class="tb2 a" onclick="slt('login',this)">تسجيل الدخول</button>
+<button class="tb2" onclick="slt('register',this)">حساب جديد</button>
+</div>
+<div id="loginForm">
+<div class="fg"><label>رقم الهاتف</label><input type="tel" id="lp" placeholder="05XX XX XX XX"></div>
+<div class="fg"><label>كلمة المرور (PIN)</label>
+<div class="pi" id="loginPin">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,1)" onkeydown="mpb(event,0)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,2)" onkeydown="mpb(event,1)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,3)" onkeydown="mpb(event,2)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,4)" onkeydown="mpb(event,3)">
+</div>
+<p class="fh">أدخل رمز PIN المكون من 4 أرقام</p>
+</div>
+<button class="bt bt-p" onclick="dl()" style="width:100%;margin-bottom:15px">🔐 دخول</button>
+<p style="text-align:center;color:var(--tl);font-size:13px">🔒 بياناتك محمية ومشفرة</p>
+</div>
+<div id="registerForm" class="h">
+<div class="fg"><label>الاسم الكامل</label><input type="text" id="rn" placeholder="الاسم واللقب"></div>
+<div class="fg"><label>رقم الهاتف</label><input type="tel" id="rp" placeholder="05XX XX XX XX"><p class="fh">سنرسل لك رمز التحقق</p></div>
+<div class="fg"><label>كلمة المرور (PIN)</label>
+<div class="pi" id="regPin">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,1)" onkeydown="mpb(event,0)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,2)" onkeydown="mpb(event,1)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,3)" onkeydown="mpb(event,2)">
+<input type="password" class="pi2" maxlength="1" oninput="mp(this,4)" onkeydown="mpb(event,3)">
+</div>
+</div>
+<div class="fg"><label>نوع الحساب</label><select id="rt"><option value="client">👤 زبون</option><option value="artisan">🛠️ حرفي</option></select></div>
+<button class="bt bt-p" onclick="dr()" style="width:100%;margin-bottom:15px">✅ إنشاء حساب</button>
+</div>
+</div>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" class="h">
+<header class="hd">
+<div class="hd-t">
+<div class="lg"><div class="lg-i">🛠️</div><div class="lg-t"><h1>حرفي</h1><span>منصة الحرفيين الجزائرية</span></div></div>
+<div class="hd-a"><div class="ub" id="ub">👤 زائر</div><button class="bi" onclick="os()">📤</button><button class="bi" onclick="lo()">🚪</button></div>
+</div>
+<div class="sb"><span class="si">🔍</span><input type="text" id="si" placeholder="ابحث عن حرفي (نجار، سباك، سودور...)" oninput="fa()"></div>
+</header>
+
+<div class="sb2"><span class="sh">🔒</span><div><h4>🔐 أمان متكامل</h4><p>بياناتك مشفرة · تحقق من الهوية · تقييمات موثوقة</p></div></div>
+
+<!-- PAYMENT BANNER FOR ARTISANS -->
+<div id="payBanner" class="h">
+<div class="pay-banner">
+<span class="ph">⚠️</span>
+<div><h4>الاشتراك على وشك الانتهاء!</h4><p>جدد اشتراكك للحفاظ على ظهور بياناتك</p></div>
+<button onclick="openRenew()">تجديد الآن</button>
+</div>
+</div>
+
+<div class="cat"><div class="cl" id="cl">
+<div class="ci a" onclick="sc('all',this)">🏠 الكل</div>
+<div class="ci" onclick="sc('نجار',this)">🪵 نجار</div>
+<div class="ci" onclick="sc('سباك',this)">🔧 سباك</div>
+<div class="ci" onclick="sc('كهربائي',this)">⚡ كهربائي</div>
+<div class="ci" onclick="sc('حداد',this)">🔨 حداد</div>
+<div class="ci" onclick="sc('صباغ',this)">🎨 صباغ</div>
+<div class="ci" onclick="sc('بلاط',this)">🏗️ بلاط</div>
+<div class="ci" onclick="sc('تكييف',this)">❄️ تكييف</div>
+<div class="ci" onclick="sc('سودور',this)">🔥 سودور</div>
+<div class="ci" onclick="sc('أمنيوم',this)">🪟 أمنيوم</div>
+<div class="ci" onclick="sc('جزار',this)">🥩 جزار</div>
+<div class="ci" onclick="sc('خياط',this)">🧵 خياط</div>
+<div class="ci" onclick="sc('حلاق',this)">💈 حلاق</div>
+<div class="ci" onclick="sc('ميكانيكي',this)">🔩 ميكانيكي</div>
+<div class="ci" onclick="sc('نقاش',this)">🖼️ نقاش</div>
+<div class="ci" onclick="sc('مجدل',this)">🧶 مجدل</div>
+<div class="ci" onclick="sc('خباز',this)">🥖 خباز</div>
+<div class="ci" onclick="sc('حلواني',this)">🍰 حلواني</div>
+<div class="ci" onclick="sc('نقاش سيارات',this)">🚗 نقاش سيارات</div>
+<div class="ci" onclick="sc('تركيب زجاج',this)">🪟 تركيب زجاج</div>
+<div class="ci" onclick="sc('تصليح أجهزة',this)">📺 تصليح أجهزة</div>
+<div class="ci" onclick="sc('تركيب باركيه',this)">🪵 باركيه</div>
+<div class="ci" onclick="sc('تنظيف',this)">🧹 تنظيف</div>
+<div class="ci" onclick="sc('نقل أثاث',this)">🚚 نقل أثاث</div>
+<div class="ci" onclick="sc('حدائق',this)">🌳 حدائق</div>
+<div class="ci" onclick="sc('تمديدات غاز',this)">🔥 تمديدات غاز</div>
+<div class="ci" onclick="sc('عزل',this)">🏠 عزل</div>
+<div class="ci" onclick="sc('تصليح هواتف',this)">📱 تصليح هواتف</div>
+<div class="ci" onclick="sc('مصور',this)">📸 مصور</div>
+</div></div>
+
+<div class="ps" id="homePage">
+<div class="st"><h2>🔥 الأكثر طلباً</h2><a href="#" onclick="sa()">عرض الكل</a></div>
+<div class="ag" id="ag"></div>
+</div>
+
+<div class="ps h" id="favoritesPage">
+<div class="st"><h2>❤️ المفضلة</h2></div>
+<div class="ag" id="fg"></div>
+</div>
+
+<div class="ps h" id="ordersPage">
+<div class="st"><h2>📋 طلباتي</h2></div>
+<div style="padding:0 20px" id="ol"></div>
+</div>
+
+<div class="ps h" id="addPage">
+<div class="st"><h2>➕ سجل كحرفي</h2></div>
+<div style="padding:0 20px;max-width:500px">
+<div class="fg"><label>الاسم الكامل *</label><input type="text" id="an" placeholder="مثال: أحمد بن علي"></div>
+<div class="fg"><label>نوع الحرفة *</label><select id="ac"><option value="">اختر الحرفة</option>
+<option value="نجار">🪵 نجار</option><option value="سباك">🔧 سباك</option><option value="كهربائي">⚡ كهربائي</option><option value="حداد">🔨 حداد</option><option value="صباغ">🎨 صباغ</option><option value="بلاط">🏗️ بلاط</option><option value="تكييف">❄️ تكييف</option><option value="سودور">🔥 سودور (لحام)</option><option value="أمنيوم">🪟 أمنيوم</option><option value="جزار">🥩 جزار</option><option value="خياط">🧵 خياط</option><option value="حلاق">💈 حلاق</option><option value="ميكانيكي">🔩 ميكانيكي</option><option value="نقاش">🖼️ نقاش</option><option value="مجدل">🧶 مجدل</option><option value="خباز">🥖 خباز</option><option value="حلواني">🍰 حلواني</option><option value="نقاش سيارات">🚗 نقاش سيارات</option><option value="تركيب زجاج">🪟 تركيب زجاج</option><option value="تصليح أجهزة">📺 تصليح أجهزة</option><option value="تركيب باركيه">🪵 تركيب باركيه</option><option value="تنظيف">🧹 تنظيف</option><option value="نقل أثاث">🚚 نقل أثاث</option><option value="حدائق">🌳 حدائق</option><option value="تمديدات غاز">🔥 تمديدات غاز</option><option value="عزل">🏠 عزل</option><option value="تصليح هواتف">📱 تصليح هواتف</option><option value="مصور">📸 مصور</option>
+</select></div>
+<div class="fg"><label>الولاية *</label><select id="as"><option value="">اختر الولاية</option>
+<option value="أدرار">01 - أدرار</option><option value="الشلف">02 - الشلف</option><option value="الأغواط">03 - الأغواط</option><option value="أم البواقي">04 - أم البواقي</option><option value="باتنة">05 - باتنة</option><option value="بجاية">06 - بجاية</option><option value="بسكرة">07 - بسكرة</option><option value="بشار">08 - بشار</option><option value="البليدة">09 - البليدة</option><option value="البويرة">10 - البويرة</option><option value="تمنراست">11 - تمنراست</option><option value="تبسة">12 - تبسة</option><option value="تلمسان">13 - تلمسان</option><option value="تيارت">14 - تيارت</option><option value="تيزي وزو">15 - تيزي وزو</option><option value="الجزائر العاصمة">16 - الجزائر العاصمة</option><option value="الجلفة">17 - الجلفة</option><option value="جيجل">18 - جيجل</option><option value="سطيف">19 - سطيف</option><option value="سعيدة">20 - سعيدة</option><option value="سكيكدة">21 - سكيكدة</option><option value="سيدي بلعباس">22 - سيدي بلعباس</option><option value="عنابة">23 - عنابة</option><option value="قالمة">24 - قالمة</option><option value="قسنطينة">25 - قسنطينة</option><option value="المدية">26 - المدية</option><option value="مستغانم">27 - مستغانم</option><option value="المسيلة">28 - المسيلة</option><option value="معسكر">29 - معسكر</option><option value="ورقلة">30 - ورقلة</option><option value="وهران">31 - وهران</option><option value="البيض">32 - البيض</option><option value="إليزي">33 - إليزي</option><option value="برج بوعريريج">34 - برج بوعريريج</option><option value="بومرداس">35 - بومرداس</option><option value="الطارف">36 - الطارف</option><option value="تندوف">37 - تندوف</option><option value="تيسمسيلت">38 - تيسمسيلت</option><option value="الوادي">39 - الوادي</option><option value="خنشلة">40 - خنشلة</option><option value="سوق أهراس">41 - سوق أهراس</option><option value="تيبازة">42 - تيبازة</option><option value="ميلة">43 - ميلة</option><option value="عين الدفلى">44 - عين الدفلى</option><option value="النعامة">45 - النعامة</option><option value="عين تموشنت">46 - عين تموشنت</option><option value="غرداية">47 - غرداية</option><option value="غليزان">48 - غليزان</option><option value="تيميمون">49 - تيميمون</option><option value="برج باجي مختار">50 - برج باجي مختار</option><option value="أولاد جلال">51 - أولاد جلال</option><option value="بني عباس">52 - بني عباس</option><option value="إن صالح">53 - إن صالح</option><option value="إن قزام">54 - إن قزام</option><option value="تقرت">55 - تقرت</option><option value="جانت">56 - جانت</option><option value="المغير">57 - المغير</option><option value="المنيعة">58 - المنيعة</option>
+</select></div>
+<div class="fg"><label>رقم الهاتف *</label><input type="tel" id="aph" placeholder="05XX XX XX XX"></div>
+<div class="fg"><label>وصف الخدمات</label><textarea id="ad" placeholder="اشرح خدماتك وخبراتك..."></textarea></div>
+<div class="fg"><label>سنوات الخبرة</label><input type="number" id="ae" placeholder="مثال: 5" min="0" max="60"></div>
+<button class="bt bt-p" onclick="aa()" style="width:100%;margin-bottom:20px">✅ تسجيل</button>
+</div>
+</div>
+
+<div class="ps h" id="profilePage">
+<div style="padding:20px;text-align:center">
+<div style="width:100px;height:100px;background:linear-gradient(135deg,var(--p),var(--pd));border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:50px">👤</div>
+<h2 style="font-size:22px;font-weight:800;margin-bottom:5px" id="pn">زائر</h2>
+<p style="color:var(--tl);margin-bottom:20px" id="pt">زبون</p>
+<div style="background:var(--c);border-radius:var(--r);padding:20px;margin-bottom:20px;text-align:right">
+<h3 style="font-size:16px;font-weight:800;margin-bottom:15px">📊 إحصائيات التطبيق</h3>
+<div style="display:flex;justify-content:space-around;text-align:center">
+<div><div style="font-size:28px;font-weight:900;color:var(--p)" id="sa">0</div><div style="font-size:12px;color:var(--tl)">حرفي</div></div>
+<div><div style="font-size:28px;font-weight:900;color:var(--s)" id="sc">0</div><div style="font-size:12px;color:var(--tl)">حرفة</div></div>
+<div><div style="font-size:28px;font-weight:900;color:var(--a)" id="ss">0</div><div style="font-size:12px;color:var(--tl)">ولاية</div></div>
+</div>
+</div>
+<div style="background:var(--c);border-radius:var(--r);padding:20px;margin-bottom:20px;text-align:right">
+<h3 style="font-size:16px;font-weight:800;margin-bottom:15px">💳 طرق الدفع المتاحة</h3>
+<div class="pm">
+<div class="pm2 s"><div class="pi">🏤</div><div class="pn">CCP</div><div class="pd">بريد الجزائر</div></div>
+<div class="pm2"><div class="pi">📱</div><div class="pn">BaridiMob</div><div class="pd">الدفع الإلكتروني</div></div>
+<div class="pm2"><div class="pi">💵</div><div class="pn">نقدي</div><div class="pd">عند التسليم</div></div>
+<div class="pm2"><div class="pi">💳</div><div class="pn">بطاقة بنكية</div><div class="pd">Edahabia / CIB</div></div>
+</div>
+</div>
+<button class="bt bt-p" id="btnRegisterArtisan" onclick="sp('addPage')" style="width:100%;margin-bottom:10px">➕ سجل كحرفي</button>
+<button class="bt bt-d" onclick="lo()" style="width:100%">🚪 تسجيل الخروج</button>
+</div>
+</div>
+
+<nav class="bn">
+<button class="ni a" onclick="sp('homePage',this)"><span class="ni2">🏠</span><span>الرئيسية</span></button>
+<button class="ni" onclick="sp('favoritesPage',this)"><span class="ni2">❤️</span><span>المفضلة</span></button>
+<button class="ni" onclick="sp('ordersPage',this)"><span class="ni2">📋</span><span>طلباتي</span></button>
+<button class="ni" onclick="sp('addPage',this)"><span class="ni2">➕</span><span>سجل</span></button>
+<button class="ni" onclick="sp('profilePage',this)"><span class="ni2">👤</span><span>حسابي</span></button>
+</nav>
+
+<!-- SHARE MODAL -->
+<div class="mo" id="sm"><div class="md">
+<div class="mh"><h3>📤 مشاركة التطبيق</h3><button class="mc" onclick="cs()">✕</button></div>
+<div class="mb">
+<p style="margin-bottom:15px;color:var(--tl)">شارك تطبيق حرفي مع أصدقائك!</p>
+<div class="so">
+<button class="so2" onclick="sv('whatsapp')"><div class="si2" style="background:#25D366">💬</div><span>واتساب</span></button>
+<button class="so2" onclick="sv('telegram')"><div class="si2" style="background:#0088cc">✈️</div><span>تيليجرام</span></button>
+<button class="so2" onclick="sv('copy')"><div class="si2" style="background:var(--p)">📋</div><span>نسخ الرابط</span></button>
+<button class="so2" onclick="sv('download')"><div class="si2" style="background:var(--a)">💾</div><span>حفظ الملف</span></button>
+<button class="so2" onclick="sv('email')"><div class="si2" style="background:#EA4335">📧</div><span>بريد</span></button>
+<button class="so2" onclick="sv('bluetooth')"><div class="si2" style="background:#0066CC">🔵</div><span>بلوتوث</span></button>
+</div>
+</div>
+</div></div>
+
+<!-- CONTACT MODAL -->
+<div class="mo" id="cm"><div class="md">
+<div class="mh"><h3 id="cmt">📞 تواصل مع الحرفي</h3><button class="mc" onclick="cc()">✕</button></div>
+<div class="mb" id="cmc"></div>
+</div></div>
+
+<!-- BOOKING MODAL -->
+<div class="mo" id="bm"><div class="md">
+<div class="mh"><h3 id="bmt">📋 طلب خدمة</h3><button class="mc" onclick="cb()">✕</button></div>
+<div class="mb">
+<div class="fg"><label>نوع الخدمة المطلوبة</label><input type="text" id="bs" placeholder="مثال: تصليح تسرب ماء"></div>
+<div class="fg"><label>تفاصيل الطلب</label><textarea id="bd" placeholder="اشرح المشكلة بالتفصيل..."></textarea></div>
+<div class="fg"><label>العنوان</label><input type="text" id="ba" placeholder="الحي، الشارع، رقم المنزل"></div>
+<div class="fg"><label>طريقة الدفع</label><select id="bp"><option value="cash">💵 نقدي عند التسليم</option><option value="ccp">🏤 CCP - بريد الجزائر</option><option value="baridi">📱 BaridiMob</option><option value="card">💳 بطاقة بنكية</option></select></div>
+<button class="bt bt-p" onclick="sb2()" style="width:100%">✅ إرسال الطلب</button>
+</div>
+</div></div>
+
+<!-- RENEWAL MODAL -->
+<div class="mo" id="rm"><div class="md">
+<div class="mh"><h3>🤖 تجديد الاشتراك - AI</h3><button class="mc" onclick="cr2()">✕</button></div>
+<div class="mb">
+<div class="ai-badge">🤖 مساعد الذكاء الاصطناعي</div>
+<p style="margin-bottom:15px;color:var(--tl);font-size:14px;line-height:1.8">مرحباً! أنا مساعدك الذكي. لإكمال عملك وظهور بياناتك للزبائن، يرجى تحويل رسوم الاشتراك السنوي عبر CCP.</p>
+<div class="pay-info">
+<h4>🏤 معلومات الدفع</h4>
+<div class="ccp-name">حساب بريد الجزائر - CCP</div>
+<div class="ccp-num">5600 4486 2108</div>
+<p class="fh" style="text-align:center">مبلغ الاشتراك: <strong>5,000 دج / سنة</strong></p>
+</div>
+<div class="fg"><label>📸 رقم عملية التحويل (Reference)</label><input type="text" id="refNum" placeholder="مثال: REF123456789"></div>
+<div class="fg"><label>📱 رقم الهاتف المستخدم في التحويل</label><input type="tel" id="payPhone" placeholder="05XX XX XX XX"></div>
+<div class="fg"><label>📅 تاريخ التحويل</label><input type="date" id="payDate"></div>
+<button class="bt bt-p" onclick="submitRenewal()" style="width:100%">✅ تأكيد الدفع</button>
+<p class="fh" style="text-align:center;margin-top:10px">سيتم التحقق من الدفع خلال 24 ساعة</p>
+</div>
+</div></div>
+
+<!-- TOAST -->
+<div class="to" id="t"></div>
+</div>
+
+<script>
+const CCP_NUM = "5600 4486 2108";
+const SUBSCRIPTION_PRICE = 5000;
+const SUBSCRIPTION_DAYS = 365;
+
+const CF = {
+"نجار":{e:"🪵",g:"linear-gradient(135deg,#8B4513 0%,#D2691E 100%)"},
+"سباك":{e:"🔧",g:"linear-gradient(135deg,#1e3a8a 0%,#3b82f6 100%)"},
+"كهربائي":{e:"⚡",g:"linear-gradient(135deg,#f59e0b 0%,#d97706 100%)"},
+"حداد":{e:"🔨",g:"linear-gradient(135deg,#374151 0%,#6b7280 100%)"},
+"صباغ":{e:"🎨",g:"linear-gradient(135deg,#ec4899 0%,#8b5cf6 100%)"},
+"بلاط":{e:"🏗️",g:"linear-gradient(135deg,#78716c 0%,#a8a29e 100%)"},
+"تكييف":{e:"❄️",g:"linear-gradient(135deg,#06b6d4 0%,#0891b2 100%)"},
+"سودور":{e:"🔥",g:"linear-gradient(135deg,#dc2626 0%,#991b1b 100%)"},
+"أمنيوم":{e:"🪟",g:"linear-gradient(135deg,#64748b 0%,#94a3b8 100%)"},
+"جزار":{e:"🥩",g:"linear-gradient(135deg,#be123c 0%,#e11d48 100%)"},
+"خياط":{e:"🧵",g:"linear-gradient(135deg,#c026d3 0%,#a21caf 100%)"},
+"حلاق":{e:"💈",g:"linear-gradient(135deg,#0ea5e9 0%,#0284c7 100%)"},
+"ميكانيكي":{e:"🔩",g:"linear-gradient(135deg,#475569 0%,#334155 100%)"},
+"نقاش":{e:"🖼️",g:"linear-gradient(135deg,#f97316 0%,#ea580c 100%)"},
+"مجدل":{e:"🧶",g:"linear-gradient(135deg,#db2777 0%,#be185d 100%)"},
+"خباز":{e:"🥖",g:"linear-gradient(135deg,#d97706 0%,#b45309 100%)"},
+"حلواني":{e:"🍰",g:"linear-gradient(135deg,#f472b6 0%,#db2777 100%)"},
+"نقاش سيارات":{e:"🚗",g:"linear-gradient(135deg,#2563eb 0%,#1d4ed8 100%)"},
+"تركيب زجاج":{e:"🪟",g:"linear-gradient(135deg,#0d9488 0%,#0f766e 100%)"},
+"تصليح أجهزة":{e:"📺",g:"linear-gradient(135deg,#4f46e5 0%,#4338ca 100%)"},
+"تركيب باركيه":{e:"🪵",g:"linear-gradient(135deg,#92400e 0%,#78350f 100%)"},
+"تنظيف":{e:"🧹",g:"linear-gradient(135deg,#14b8a6 0%,#0d9488 100%)"},
+"نقل أثاث":{e:"🚚",g:"linear-gradient(135deg,#ca8a04 0%,#a16207 100%)"},
+"حدائق":{e:"🌳",g:"linear-gradient(135deg,#16a34a 0%,#15803d 100%)"},
+"تمديدات غاز":{e:"🔥",g:"linear-gradient(135deg,#ea580c 0%,#c2410c 100%)"},
+"عزل":{e:"🏠",g:"linear-gradient(135deg,#0891b2 0%,#0e7490 100%)"},
+"تصليح هواتف":{e:"📱",g:"linear-gradient(135deg,#6366f1 0%,#4f46e5 100%)"},
+"مصور":{e:"📸",g:"linear-gradient(135deg,#7c3aed 0%,#6d28d9 100%)"}
+};
+
+// Default artisans data
+const DEFAULT_ARTISANS = [
+{id:1,n:"أحمد بن علي",c:"نجار",s:"الجزائر العاصمة",p:"0555123456",r:4.8,v:127,d:"نجار محترف 15 سنة خبرة. تفصيل أثاث، تركيب، صيانة.",t:["أثاث","تركيب","صيانة"],vr:1,ex:15,paid:1,payDate:"2025-01-15",expDate:"2026-01-15"},
+{id:2,n:"محمد زروقي",c:"سباك",s:"وهران",p:"0666789012",r:4.9,v:203,d:"سباك معتمد. تمديدات صحية، تصليح تسربات، تركيب سخانات.",t:["تمديدات","تسربات","سخانات"],vr:1,ex:20,paid:1,payDate:"2025-03-10",expDate:"2026-03-10"},
+{id:3,n:"كريم عمراني",c:"كهربائي",s:"قسنطينة",p:"0777123456",r:4.7,v:89,d:"كهربائي منازل وتجاري. تركيب لوحات، إنارة، أعطال كهربائية.",t:["لوحات","إنارة","أعطال"],vr:0,ex:8,paid:0,payDate:"",expDate:""},
+{id:4,n:"عبدالله حمادي",c:"حداد",s:"عنابة",p:"0555987654",r:4.6,v:156,d:"حداد أبواب وشبابيك. لحام، تركيب، صيانة حديد.",t:["أبواب","شبابيك","لحام"],vr:1,ex:12,paid:1,payDate:"2025-02-20",expDate:"2026-02-20"},
+{id:5,n:"يوسف بلعيد",c:"صباغ",s:"سطيف",p:"0666234567",r:4.9,v:312,d:"صباغ داخلي وخارجي. دهانات حديثة، ورق حائط، ديكور.",t:["دهانات","ورق حائط","ديكور"],vr:1,ex:18,paid:1,payDate:"2025-01-01",expDate:"2026-01-01"},
+{id:6,n:"سمير بوزيد",c:"بلاط",s:"البليدة",p:"0777345678",r:4.5,v:78,d:"مبلط محترف. سيراميك، رخام، باركيه، زليج.",t:["سيراميك","رخام","باركيه"],vr:0,ex:6,paid:0,payDate:"",expDate:""},
+{id:7,n:"نورالدين عمارة",c:"تكييف",s:"تلمسان",p:"0555456789",r:4.8,v:145,d:"فني تكييف. تركيب، صيانة، شحن غاز، تنظيف.",t:["تركيب","صيانة","شحن غاز"],vr:1,ex:10,paid:1,payDate:"2025-04-05",expDate:"2026-04-05"},
+{id:8,n:"رشيد مزياني",c:"أمنيوم",s:"بومرداس",p:"0667567890",r:4.7,v:98,d:"نجار ألومنيوم. شبابيك، أبواب، واجهات، مطابخ.",t:["شبابيك","أبواب","مطابخ"],vr:1,ex:14,paid:1,payDate:"2025-05-12",expDate:"2026-05-12"},
+{id:9,n:"عمار السودور",c:"سودور",s:"وهران",p:"0555678901",r:4.8,v:167,d:"سودور محترف. لحام ARGON, TIG, MIG. هياكل معدنية.",t:["لحام ARGON","هياكل","صيانة"],vr:1,ex:22,paid:1,payDate:"2025-06-20",expDate:"2026-06-20"},
+{id:10,n:"كمال بوشامة",c:"سودور",s:"الجزائر العاصمة",p:"0777890123",r:4.6,v:89,d:"سودور متخصص في الأبواب الحديدية والشبابيك.",t:["أبواب حديد","شبابيك","درابزين"],vr:0,ex:9,paid:0,payDate:"",expDate:""},
+{id:11,n:"فريد خالدي",c:"أمنيوم",s:"قسنطينة",p:"0666901234",r:4.9,v:234,d:"أخصائي ألومنيوم و PVC. مطابخ، خزائن، واجهات محلات.",t:["مطابخ","خزائن","PVC"],vr:1,ex:16,paid:1,payDate:"2025-02-28",expDate:"2026-02-28"},
+{id:12,n:"ياسين حميدة",c:"جزار",s:"باتنة",p:"0555012345",r:4.7,v:445,d:"جزار متخصص. ذبائح حلال، تقطيع، توصيل للمنازل.",t:["ذبائح حلال","توصيل","تقطيع"],vr:1,ex:25,paid:1,payDate:"2025-03-15",expDate:"2026-03-15"},
+{id:13,n:"سوفيا بن يوسف",c:"خياط",s:"تيزي وزو",p:"0777123456",r:4.8,v:198,d:"خياطة تقليدية وحديثة. قفطان، كاراكو، تعديلات.",t:["قفطان","كاراكو","تعديلات"],vr:1,ex:20,paid:1,payDate:"2025-01-20",expDate:"2026-01-20"},
+{id:14,n:"رضا مباركي",c:"حلاق",s:"وهران",p:"0666234567",r:4.9,v:567,d:"حلاق رجالي. قصات عصرية، حلاقة ذقن، عناية بالشعر.",t:["قصات","حلاقة","عناية"],vr:1,ex:11,paid:1,payDate:"2025-04-01",expDate:"2026-04-01"},
+{id:15,n:"نبيل قادري",c:"ميكانيكي",s:"البويرة",p:"0555345678",r:4.7,v:203,d:"ميكانيكي سيارات. صيانة، توضيب محركات، كهرباء سيارات.",t:["صيانة","محركات","كهرباء"],vr:1,ex:14,paid:1,payDate:"2025-05-05",expDate:"2026-05-05"},
+{id:16,n:"هشام لعماري",c:"نقاش",s:"المدية",p:"0777456789",r:4.6,v:112,d:"نقاش محترف. إطارات، تلوين، ترميم لوحات فنية.",t:["إطارات","تلوين","ترميم"],vr:0,ex:7,paid:0,payDate:"",expDate:""},
+{id:17,n:"فاطمة زهرة",c:"مجدل",s:"سوق أهراس",p:"0666567890",r:4.8,v:178,d:"مجدلة سجاد وموكيت. غسيل، تجفيف، ترميم.",t:["سجاد","موكيت","غسيل"],vr:1,ex:19,paid:1,payDate:"2025-02-10",expDate:"2026-02-10"},
+{id:18,n:"عبدالرحمن خباز",c:"خباز",s:"قالمة",p:"0555678901",r:4.9,v:389,d:"خباز تقليدي. خبز، باغيط، كسرة، مقروض، سفنج.",t:["خبز","باغيط","مقروض"],vr:1,ex:30,paid:1,payDate:"2025-03-01",expDate:"2026-03-01"},
+{id:19,n:"ليلى حلوة",c:"حلواني",s:"الطارف",p:"0777789012",r:4.8,v:256,d:"حلويات تقليدية. بقلاوة، كعك، غريبة، مناسبات.",t:["بقلاوة","كعك","مناسبات"],vr:1,ex:15,paid:1,payDate:"2025-01-10",expDate:"2026-01-10"},
+{id:20,n:"طارق سيارات",c:"نقاش سيارات",s:"وهران",p:"0666890123",r:4.7,v:134,d:"نقاش سيارات. بويا، صدمات، تلميع، حماية.",t:["بويا","صدمات","تلميع"],vr:1,ex:12,paid:1,payDate:"2025-04-15",expDate:"2026-04-15"}
+];
+
+// State
+let A = [];
+let F = [];
+let O = [];
+let U = null;
+let fl = 'all';
+let ca = null;
+let toastTimeout = null;
+
+// ==================== FIX 1: Proper Data Loading ====================
+function loadData() {
+    const savedArtisans = localStorage.getItem('harfi_artisans');
+    if (savedArtisans) {
+        try {
+            const parsed = JSON.parse(savedArtisans);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+                const defaultIds = new Set(DEFAULT_ARTISANS.map(a => a.id));
+                const userArtisans = parsed.filter(a => !defaultIds.has(a.id));
+                A = [...DEFAULT_ARTISANS, ...userArtisans];
+            } else {
+                A = [...DEFAULT_ARTISANS];
+            }
+        } catch (e) {
+            A = [...DEFAULT_ARTISANS];
+        }
+    } else {
+        A = [...DEFAULT_ARTISANS];
+    }
+
+    try { F = JSON.parse(localStorage.getItem('harfi_favorites') || '[]'); } catch (e) { F = []; }
+    try { O = JSON.parse(localStorage.getItem('harfi_orders') || '[]'); } catch (e) { O = []; }
+    try { U = JSON.parse(localStorage.getItem('harfi_user') || 'null'); } catch (e) { U = null; }
+}
+
+function saveArtisans() { localStorage.setItem('harfi_artisans', JSON.stringify(A)); }
+function saveFavorites() { localStorage.setItem('harfi_favorites', JSON.stringify(F)); }
+function saveOrders() { localStorage.setItem('harfi_orders', JSON.stringify(O)); }
+function saveUser() { 
+    if (U) localStorage.setItem('harfi_user', JSON.stringify(U));
+    else localStorage.removeItem('harfi_user');
+}
+function saveUsers(users) { localStorage.setItem('harfi_users', JSON.stringify(users)); }
+function loadUsers() {
+    try { return JSON.parse(localStorage.getItem('harfi_users') || '[]'); }
+    catch (e) { return []; }
+}
+
+// ==================== FIX 2: Subscription Logic ====================
+function isSubActive(a) {
+    if (!a) return false;
+    if (!a.paid) return false;
+    if (!a.expDate || a.expDate === '') return false;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const exp = new Date(a.expDate);
+    return exp >= today;
+}
+
+function isExpiringSoon(a) {
+    if (!a || !a.paid || !a.expDate || a.expDate === '') return false;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const exp = new Date(a.expDate);
+    const diff = (exp - today) / (1000 * 60 * 60 * 24);
+    return diff >= 0 && diff <= 7;
+}
+
+// ==================== FIX 3: Auth & Navigation ====================
+function ca2() {
+    if (U) {
+        document.getElementById('loginPage').classList.add('h');
+        document.getElementById('mainApp').classList.remove('h');
+        document.getElementById('ub').textContent = '👤 ' + (U.n ? U.n.split(' ')[0] : 'مستخدم');
+        document.getElementById('pn').textContent = U.n || 'مستخدم';
+        document.getElementById('pt').textContent = U.t === 'artisan' ? '🛠️ حرفي' : '👤 زبون';
+
+        if (U.t === 'artisan') {
+            const artisan = A.find(a => a.p === U.p);
+            if (artisan && isExpiringSoon(artisan)) {
+                document.getElementById('payBanner').classList.remove('h');
+            } else {
+                document.getElementById('payBanner').classList.add('h');
+            }
+            const btnReg = document.getElementById('btnRegisterArtisan');
+            if (btnReg) btnReg.classList.add('h');
+        } else {
+            document.getElementById('payBanner').classList.add('h');
+            const btnReg = document.getElementById('btnRegisterArtisan');
+            if (btnReg) btnReg.classList.remove('h');
+        }
+
+        us(); 
+        ra(A);
+    } else {
+        document.getElementById('loginPage').classList.remove('h');
+        document.getElementById('mainApp').classList.add('h');
+        document.getElementById('payBanner').classList.add('h');
+    }
+}
+
+function slt(t, b) {
+    document.querySelectorAll('#loginPage .tb2').forEach(x => x.classList.remove('a'));
+    b.classList.add('a');
+    if (t === 'login') {
+        document.getElementById('loginForm').classList.remove('h');
+        document.getElementById('registerForm').classList.add('h');
+    } else {
+        document.getElementById('loginForm').classList.add('h');
+        document.getElementById('registerForm').classList.remove('h');
+    }
+}
+
+// ==================== FIX 4: PIN Input ====================
+function mp(e, n) {
+    if (e.value && !/^\d$/.test(e.value)) {
+        e.value = '';
+        return;
+    }
+    if (e.value && n < 4) {
+        const inputs = e.parentElement.querySelectorAll('.pi2');
+        if (inputs[n]) inputs[n].focus();
+    }
+}
+
+function mpb(e, p) {
+    if (e.key === 'Backspace' && !e.target.value && p >= 0) {
+        const inputs = e.target.parentElement.querySelectorAll('.pi2');
+        if (inputs[p]) inputs[p].focus();
+    }
+}
+
+function gp(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return '';
+    return Array.from(container.querySelectorAll('.pi2')).map(x => x.value).join('');
+}
+
+function clearPin(containerId) {
+    const container = document.getElementById(containerId);
+    if (container) {
+        container.querySelectorAll('.pi2').forEach(inp => inp.value = '');
+    }
+}
+
+// ==================== FIX 5: Login ====================
+function dl() {
+    const p = document.getElementById('lp').value.trim();
+    const pin = gp('loginPin');
+    if (!p || pin.length !== 4) { 
+        st('⚠️ أكمل البيانات (رقم هاتف + 4 أرقام PIN)'); 
+        return; 
+    }
+    const users = loadUsers();
+    const u = users.find(x => x.p === p && x.pin === pin);
+    if (u) {
+        U = u; 
+        saveUser();
+        clearPin('loginPin');
+        document.getElementById('lp').value = '';
+        st('✅ مرحباً ' + (u.n ? u.n.split(' ')[0] : 'مستخدم') + '!');
+        ca2();
+    } else { 
+        st('❌ رقم الهاتف أو PIN غير صحيح'); 
+    }
+}
+
+// ==================== FIX 6: Register ====================
+function dr() {
+    const n = document.getElementById('rn').value.trim();
+    const p = document.getElementById('rp').value.trim();
+    const pin = gp('regPin');
+    const t = document.getElementById('rt').value;
+
+    if (!n || !p || pin.length !== 4) { 
+        st('⚠️ أكمل كل الخانات (الاسم، الهاتف، و 4 أرقام PIN)'); 
+        return; 
+    }
+
+    if (!/^0[5-7]\d{8}$/.test(p)) {
+        st('⚠️ رقم الهاتف غير صحيح (مثال: 0555123456)');
+        return;
+    }
+
+    let users = loadUsers();
+    if (users.find(x => x.p === p)) { 
+        st('⚠️ هذا الرقم مسجل مسبقاً'); 
+        return; 
+    }
+
+    const nu = { id: Date.now(), n, p, pin, t };
+    users.push(nu); 
+    saveUsers(users);
+
+    U = nu; 
+    saveUser();
+
+    document.getElementById('rn').value = '';
+    document.getElementById('rp').value = '';
+    clearPin('regPin');
+    document.getElementById('rt').value = 'client';
+
+    st('✅ تم إنشاء الحساب بنجاح!'); 
+    ca2();
+}
+
+function lo() {
+    U = null; 
+    saveUser();
+    st('👋 إلى اللقاء!'); 
+    ca2();
+}
+
+// ==================== FIX 7: Render Artisans ====================
+function ra(d, cid) {
+    cid = cid || 'ag';
+    const c = document.getElementById(cid);
+    if (!c) return;
+
+    const activeArtisans = d.filter(a => isSubActive(a));
+
+    if (!activeArtisans.length) {
+        c.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--tl)"><div style="font-size:60px;margin-bottom:15px">🔍</div><h3 style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--t)">ما لقيناش حرفيين</h3><p>جرب بحث آخر أو سجل كحرفي!</p></div>';
+        return;
+    }
+
+    c.innerHTML = activeArtisans.map(function(a) {
+        const cr = CF[a.c] || { e: '🔨', g: 'linear-gradient(135deg,#667eea 0%,#764ba2 100%)' };
+        const expSoon = isExpiringSoon(a);
+        const isFav = F.indexOf(a.id) > -1;
+
+        return '<div class="ac" onclick="sc2(' + a.id + ')">' +
+            '<div class="ci2" style="background:' + cr.g + '">' +
+                '<span style="font-size:70px">' + cr.e + '</span>' +
+                '<div class="cb">⭐ ' + a.r + '</div>' +
+                '<button class="cf" onclick="event.stopPropagation();tf(' + a.id + ')">' + (isFav ? '❤️' : '🤍') + '</button>' +
+                (a.vr ? '<div class="vb">✓ موثق</div>' : '') +
+                (expSoon ? '<div class="vb" style="background:var(--warn)">⚠️ ينتهي قريباً</div>' : '') +
+            '</div>' +
+            '<div class="cb2">' +
+                '<div class="ch">' +
+                    '<div><div class="cn">' + a.n + (a.vr ? ' ✓' : '') + '</div><div class="cc">' + a.c + ' · ' + a.ex + ' سنة خبرة</div></div>' +
+                    '<div class="cr">⭐ ' + a.r + '</div>' +
+                '</div>' +
+                '<div class="cl2">📍 ' + a.s + ' · ' + a.v + ' تقييم</div>' +
+                '<div class="ct">' + a.t.map(function(x) { return '<span class="tg' + (a.vr ? ' v' : '') + '">' + x + '</span>'; }).join('') + '</div>' +
+                '<div class="cft">' +
+                    '<button class="bt bt-p" onclick="event.stopPropagation();ca3('' + a.p + '')">📞 اتصل</button>' +
+                    '<button class="bt bt-o" onclick="event.stopPropagation();ob(' + a.id + ')">📋 اطلب</button>' +
+                '</div>' +
+            '</div>' +
+        '</div>';
+    }).join('');
+}
+
+// ==================== FIX 8: Search & Filter ====================
+function fa() {
+    const q = document.getElementById('si').value.toLowerCase().trim();
+    let f = A;
+    if (fl !== 'all') f = f.filter(a => a.c === fl);
+    if (q) {
+        f = f.filter(a => 
+            (a.n && a.n.toLowerCase().includes(q)) || 
+            (a.c && a.c.toLowerCase().includes(q)) || 
+            (a.s && a.s.toLowerCase().includes(q)) || 
+            (a.t && a.t.some(x => x.toLowerCase().includes(q)))
+        );
+    }
+    ra(f);
+}
+
+function sc(c, el) {
+    document.querySelectorAll('.ci').forEach(x => x.classList.remove('a'));
+    el.classList.add('a');
+    fl = c; 
+    fa();
+}
+
+function sa() {
+    fl = 'all';
+    document.querySelectorAll('.ci').forEach(x => x.classList.remove('a'));
+    document.querySelector('.ci').classList.add('a');
+    document.getElementById('si').value = '';
+    ra(A);
+}
+
+// ==================== FIX 9: Favorites ====================
+function tf(id) {
+    const i = F.indexOf(id);
+    if (i > -1) { 
+        F.splice(i, 1); 
+        st('❌ حُذف من المفضلة'); 
+    } else { 
+        F.push(id); 
+        st('❤️ أُضيف للمفضلة'); 
+    }
+    saveFavorites(); 
+    fa();
+}
+
+function rf() { 
+    const favArtisans = A.filter(a => F.indexOf(a.id) > -1 && isSubActive(a));
+    ra(favArtisans, 'fg'); 
+}
+
+// ==================== FIX 10: Orders ====================
+function ro() {
+    const c = document.getElementById('ol');
+    if (!O.length) {
+        c.innerHTML = '<div style="text-align:center;padding:60px 20px;color:var(--tl)"><div style="font-size:60px;margin-bottom:15px">📋</div><h3 style="font-size:18px;font-weight:700;margin-bottom:8px;color:var(--t)">لا توجد طلبات</h3><p>اطلب حرفي الآن!</p></div>';
+        return;
+    }
+    c.innerHTML = O.map(function(o) {
+        const a = A.find(x => x.id === o.aid);
+        const sc2 = o.st === 'pending' ? 'sp' : o.st === 'accepted' ? 'sa' : o.st === 'completed' ? 'sc' : 'sx';
+        const stx = o.st === 'pending' ? '⏳ قيد الانتظار' : o.st === 'accepted' ? '✅ مقبول' : o.st === 'completed' ? '✓ مكتمل' : '❌ ملغى';
+        const artisanName = a ? a.n : 'حرفي';
+        const artisanCraft = a ? a.c : '';
+        const payMethod = o.py === 'cash' ? 'نقدي' : o.py === 'ccp' ? 'CCP' : o.py === 'baridi' ? 'BaridiMob' : 'بطاقة';
+        const dt = o.dt2 ? new Date(o.dt2).toLocaleDateString('ar-DZ') : '';
+        return '<div class="oc"><div class="oh"><div><strong>' + artisanName + '</strong> · ' + artisanCraft + '</div><span class="os ' + sc2 + '">' + stx + '</span></div><p style="color:var(--tl);font-size:13px;margin-bottom:8px">' + (o.sr || '') + '</p><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:12px;color:var(--tl)">💳 ' + payMethod + '</span><span style="font-size:12px;color:var(--tl)">' + dt + '</span></div></div>';
+    }).join('');
+}
+
+// ==================== FIX 11: Contact Modal ====================
+function sc2(id) {
+    const a = A.find(x => x.id === id);
+    if (!a) return;
+
+    if (!isSubActive(a)) {
+        st('🔒 هذا الحرفي لم يجدد اشتراكه');
+        return;
+    }
+
+    ca = id;
+    const cr = CF[a.c] || { e: '🔨', g: 'linear-gradient(135deg,#667eea 0%,#764ba2 100%)' };
+    const expSoon = isExpiringSoon(a);
+
+    document.getElementById('cmt').textContent = '📞 ' + a.n + ' - ' + a.c;
+    document.getElementById('cmc').innerHTML = 
+        '<div style="text-align:center;margin-bottom:20px">' +
+            '<div style="width:80px;height:80px;background:' + (cr.g || 'linear-gradient(135deg,#667eea 0%,#764ba2 100%)') + ';border-radius:50%;margin:0 auto 15px;display:flex;align-items:center;justify-content:center;font-size:40px">' + cr.e + '</div>' +
+            '<h3 style="font-size:20px;font-weight:800">' + a.n + (a.vr ? ' ✓' : '') + '</h3>' +
+            '<p style="color:var(--p);font-weight:700">' + a.c + ' · ' + a.ex + ' سنة خبرة</p>' +
+            '<div style="display:flex;justify-content:center;gap:15px;margin:10px 0;color:var(--tl);font-size:14px">' +
+                '<span>📍 ' + a.s + '</span><span>⭐ ' + a.r + ' (' + a.v + ')</span>' +
+            '</div>' +
+            (expSoon ? '<div style="background:#fef3c7;padding:10px;border-radius:8px;margin:10px 0;font-size:13px;color:#92400e">⚠️ ينتهي الاشتراك: ' + a.expDate + '</div>' : '') +
+        '</div>' +
+        '<div style="background:var(--bg);padding:15px;border-radius:var(--rs);margin-bottom:20px">' +
+            '<p style="color:var(--tl);font-size:14px;line-height:1.8">' + (a.d || '') + '</p>' +
+            '<div class="ct" style="margin-top:10px">' + (a.t || []).map(function(x) { return '<span class="tg">' + x + '</span>'; }).join('') + '</div>' +
+        '</div>' +
+        '<div style="display:flex;flex-direction:column;gap:10px">' +
+            '<a href="tel:' + a.p + '" class="bt bt-p" style="text-decoration:none">📞 اتصل الآن: ' + a.p + '</a>' +
+            '<a href="https://wa.me/213' + a.p.substring(1) + '" target="_blank" class="bt" style="background:#25D366;color:#fff;text-decoration:none">💬 واتساب</a>' +
+            '<button class="bt bt-a" onclick="cc();ob(' + a.id + ')">📋 اطلب خدمة</button>' +
+            '<button class="bt bt-o" onclick="cp('' + a.p + '')">📋 نسخ الرقم</button>' +
+        '</div>';
+    document.getElementById('cm').classList.add('a');
+}
+
+function cc() { document.getElementById('cm').classList.remove('a'); }
+function ca3(p) { window.location.href = 'tel:' + p; }
+function cp(p) { 
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(p).then(function() { st('📋 تم نسخ الرقم!'); });
+    } else {
+        st('📋 ' + p);
+    }
+}
+
+// ==================== FIX 12: Booking ====================
+function ob(id) {
+    if (!U) { st('🔐 سجل دخول أولاً!'); return; }
+    const a = A.find(x => x.id === id);
+    if (!a) return;
+    if (!isSubActive(a)) { st('🔒 هذا الحرفي غير متاح حالياً'); return; }
+    ca = id;
+    document.getElementById('bmt').textContent = '📋 طلب خدمة من ' + a.n;
+    document.getElementById('bs').value = ''; 
+    document.getElementById('bd').value = ''; 
+    document.getElementById('ba').value = '';
+    document.getElementById('bm').classList.add('a');
+}
+
+function cb() { document.getElementById('bm').classList.remove('a'); }
+
+function sb2() {
+    const sr = document.getElementById('bs').value.trim();
+    const dt = document.getElementById('bd').value.trim();
+    const ad = document.getElementById('ba').value.trim();
+    const py = document.getElementById('bp').value;
+    if (!sr) { st('⚠️ اكتب نوع الخدمة'); return; }
+    const o = { id: Date.now(), aid: ca, sr: sr, dt: dt, ad: ad, py: py, st: 'pending', dt2: new Date().toISOString() };
+    O.unshift(o); 
+    saveOrders();
+    st('✅ تم إرسال الطلب!'); 
+    cb(); 
+    ro();
+}
+
+// ==================== FIX 13: Add Artisan ====================
+function aa() {
+    const n = document.getElementById('an').value.trim();
+    const c = document.getElementById('ac').value;
+    const s = document.getElementById('as').value;
+    const p = document.getElementById('aph').value.trim();
+    const d = document.getElementById('ad').value.trim();
+    const ex = parseInt(document.getElementById('ae').value) || 0;
+
+    if (!n || !c || !s || !p) { st('⚠️ عبي الخانات المطلوبة!'); return; }
+
+    if (!/^0[5-7]\d{8}$/.test(p)) {
+        st('⚠️ رقم الهاتف غير صحيح (مثال: 0555123456)');
+        return;
+    }
+
+    // Check if phone already exists
+    if (A.find(a => a.p === p)) {
+        st('⚠️ هذا الرقم مسجل مسبقاً كحرفي');
+        return;
+    }
+
+    const cr = CF[c] || { e: '🔨', g: 'linear-gradient(135deg,#667eea 0%,#764ba2 100%)' };
+
+    // FIX: New artisans get 7-day trial period
+    const today = new Date();
+    const trialExp = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    const na = { 
+        id: Date.now(), 
+        n: n, 
+        c: c, 
+        s: s, 
+        p: p, 
+        d: d || ('حرفي ' + c + ' في ' + s), 
+        r: 5, 
+        v: 0, 
+        t: [c, s], 
+        vr: 0, 
+        ex: ex, 
+        paid: 1, 
+        payDate: today.toISOString().split('T')[0], 
+        expDate: trialExp.toISOString().split('T')[0]
+    };
+
+    A.unshift(na); 
+    saveArtisans();
+
+    // Clear form
+    document.getElementById('an').value = ''; 
+    document.getElementById('ac').value = ''; 
+    document.getElementById('as').value = '';
+    document.getElementById('aph').value = ''; 
+    document.getElementById('ad').value = ''; 
+    document.getElementById('ae').value = '';
+
+    st('✅ تم التسجيل! فترة تجريبية 7 أيام.');
+    sp('homePage'); 
+    ra(A); 
+    us();
+}
+
+// ==================== FIX 14: Navigation ====================
+function sp(pid, nb) {
+    document.querySelectorAll('.ps').forEach(x => x.classList.add('h'));
+    document.getElementById(pid).classList.remove('h');
+    if (nb) { 
+        document.querySelectorAll('.ni').forEach(x => x.classList.remove('a')); 
+        nb.classList.add('a'); 
+    }
+    if (pid === 'favoritesPage') rf();
+    if (pid === 'ordersPage') ro();
+    if (pid === 'profilePage') us();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ==================== FIX 15: Share ====================
+function os() { document.getElementById('sm').classList.add('a'); }
+function cs() { document.getElementById('sm').classList.remove('a'); }
+
+function sv(m) {
+    const sd = { title: 'حرفي - منصة الحرفيين الجزائرية', text: 'اكتشف أفضل الحرفيين في الجزائر! 🇩🇿', url: window.location.href };
+    if (m === 'whatsapp') window.open('https://wa.me/?text=' + encodeURIComponent(sd.text + ' ' + sd.url), '_blank');
+    else if (m === 'telegram') window.open('https://t.me/share/url?url=' + encodeURIComponent(sd.url) + '&text=' + encodeURIComponent(sd.text), '_blank');
+    else if (m === 'copy') {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(window.location.href).then(function() { st('📋 تم نسخ الرابط!'); });
+        } else {
+            st('📋 ' + window.location.href);
+        }
+    }
+    else if (m === 'download') {
+        const b = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+        const u = URL.createObjectURL(b);
+        const a = document.createElement('a'); 
+        a.href = u; 
+        a.download = 'harfi-app.html';
+        document.body.appendChild(a); 
+        a.click(); 
+        document.body.removeChild(a); 
+        URL.revokeObjectURL(u);
+        st('💾 تم تحميل التطبيق!');
+    }
+    else if (m === 'email') window.location.href = 'mailto:?subject=' + encodeURIComponent(sd.title) + '&body=' + encodeURIComponent(sd.text + '\n\n' + sd.url);
+    else if (m === 'bluetooth') st('🔵 افتح البلوتوث وشارك الملف');
+    cs();
+}
+
+// ==================== FIX 16: Renewal (single definition) ====================
+function openRenew() {
+    document.getElementById('rm').classList.add('a');
+}
+
+function cr2() {
+    document.getElementById('rm').classList.remove('a');
+}
+
+function submitRenewal() {
+    const ref = document.getElementById('refNum').value.trim();
+    const phone = document.getElementById('payPhone').value.trim();
+    const date = document.getElementById('payDate').value;
+
+    if (!ref || !phone || !date) {
+        st('⚠️ أكمل كل الخانات');
+        return;
+    }
+
+    st('🤖 جاري التحقق من الدفع...');
+
+    setTimeout(function() {
+        const artisan = A.find(a => a.p === U.p);
+        if (artisan) {
+            artisan.paid = 1;
+            artisan.payDate = date;
+            const exp = new Date(date);
+            exp.setFullYear(exp.getFullYear() + 1);
+            artisan.expDate = exp.toISOString().split('T')[0];
+            saveArtisans();
+
+            st('✅ تم التحقق! اشتراكك نشط لمدة سنة');
+            cr2();
+            ca2();
+            ra(A);
+        }
+    }, 2000);
+}
+
+// ==================== FIX 17: Toast with clearTimeout ====================
+function st(m) {
+    if (toastTimeout) clearTimeout(toastTimeout);
+    const t = document.getElementById('t');
+    t.textContent = m; 
+    t.classList.add('s');
+    toastTimeout = setTimeout(function() { t.classList.remove('s'); }, 2500);
+}
+
+// ==================== FIX 18: Stats ====================
+function us() {
+    const activeArtisans = A.filter(a => isSubActive(a));
+    const uc = [...new Set(activeArtisans.map(a => a.c))];
+    const us2 = [...new Set(activeArtisans.map(a => a.s))];
+    const e1 = document.getElementById('sa'), e2 = document.getElementById('sc'), e3 = document.getElementById('ss');
+    if (e1) e1.textContent = activeArtisans.length;
+    if (e2) e2.textContent = uc.length;
+    if (e3) e3.textContent = us2.length;
+}
+
+// ==================== FIX 19: Init ====================
+function init() {
+    loadData();
+    ca2();
+}
+
+document.querySelectorAll('.mo').forEach(function(o) {
+    o.addEventListener('click', function(e) { 
+        if (e.target === o) o.classList.remove('a'); 
+    });
+});
+
+init();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(function(reg) { console.log('SW registered'); })
+    .catch(function(err) { console.log('SW error', err); });
+}
+</script>
+</body>
+</html>
